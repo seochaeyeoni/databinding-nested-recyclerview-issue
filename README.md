@@ -1,15 +1,17 @@
-#databinding-nested-recyclerview-issue
+# databinding-nested-recyclerview-issue
 
 ISSUE                         |  Expected Result
 :----------------------------:|:----------------------------:
 ![screenshot](./art/issue.jpg)|![screenshot](./art/expected_result.jpg)
 
-###Description
+
+### Description
  When databinding is used in nested recyclerview, as much as the number of last recyclerview item,
 the number of other recyclerview item is equally forced.
 
-###Code
- '''kotlin:MyScheduleTimeAdapter.kt
+
+### Code
+ ```kotlin:MyScheduleTimeAdapter.kt
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         /**
         There is an issue when writing the code as follows.
@@ -28,4 +30,4 @@ the number of other recyclerview item is equally forced.
             binding.times = data
         }
     }
- '''
+ ```
