@@ -30,8 +30,7 @@ class MyScheduleTimeAdapter (private val context : Context) : RecyclerView.Adapt
          or
         holder.binding.times = data[position]
         **/
-        holder.binding.day.text = data[position].day
-        holder.binding.time.text = "${data[position].startTime} - ${data[position].endTime}"
+        holder.onBind(data[position])
     }
 
     class ViewHolder(val binding: MyScheduleTimeListBinding) : RecyclerView.ViewHolder(binding.root) {
