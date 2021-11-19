@@ -31,3 +31,7 @@ the number of other recyclerview item is equally forced.
         }
     }
  ```
+ 
+ 
+ ### Issue Tracker
+ https://issuetracker.google.com/207003888
